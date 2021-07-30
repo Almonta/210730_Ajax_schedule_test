@@ -1,0 +1,24 @@
+<!-- この記述がblogのshow画面に表示されるコメント入力欄になります -->
+<%= form_with(model: [blog, schedule]) do |form| %>
+  <% if schedule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(schedule.errors.count, "error") %> prohibited this comment from being saved:</h2>
+      <ul>
+      <% schedule.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= form.label :serial_number %>
+    <%= form.text_field :serial_number %>
+  </div>
+  <div class="field">
+    <%= form.label :line_on %>
+    <%= form.datetime_field :line_on %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,4 @@
+$("#schedules_area").html("<%= j(render 'schedules/index', { schedules: @schedule.blog.schedules, blog: @schedule.blog }) %>");
+$("textfield").val('');
+$("datetimefield").val('');
+$("#notice").html("<%= j flash[:notice] %>");

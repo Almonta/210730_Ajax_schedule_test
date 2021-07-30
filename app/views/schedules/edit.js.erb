@@ -1,0 +1,2 @@
+$("#this_schedule_<%= @schedule.id %>").replaceWith("<%= j render 'schedules/edit', blog: @blog, schedule: @schedule %>");
+$("#notice").html("<%= j flash[:notice] %>");
