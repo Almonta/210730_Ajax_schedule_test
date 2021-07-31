@@ -10,15 +10,80 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= form.label :serial_number %>
-    <%= form.text_field :serial_number %>
+
+  <div class="row">
+    <div class="col-2">
+      <div class="field">
+        <%= form.label :serial_number %>
+        <%= form.text_field :serial_number %>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="field">
+        <%= form.label :line_on %>
+        <%= form.date_field :line_on %>
+      </div>
+    </div>
+        <div class="col-2">
+      <div class="field">
+        <%= form.label :line_on %>
+        <%= form.date_field :line_on %>
+      </div>
+    </div>
+        <div class="col-2">
+      <div class="field">
+        <%= form.label :line_on %>
+        <%= form.date_field :line_on %>
+      </div>
+    </div>
+        <div class="col-2">
+      <div class="field">
+        <%= form.label :line_on %>
+        <%= form.date_field :line_on %>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="actions">
+        <%= form.submit %>
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= form.label :line_on %>
-    <%= form.datetime_field :line_on %>
-  </div>
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+
+  <ul class="form">
+    <li>
+      <div class="field">
+        <%= form.label :serial_number %><br>
+        <%= form.text_field :serial_number %>
+      </div>
+    </li>
+    <li>
+      <div class="field">
+        <%= form.label :line_on %><br>
+        <%= form.date_field :line_on %>
+      </div>
+    </li>
+    <li>
+      <div class="field">
+        <%= form.label :line_on %><br>
+        <%= form.date_field :line_on %>
+      </div>
+    </li>
+    <li>
+      <div class="field">
+        <%= form.label :line_on %><br>
+        <%= form.date_field :line_on %>
+      </div>
+    </li>
+    <li>
+      <div class="field">
+        <%= form.label :line_on %><br>
+        <%= form.date_field :line_on %>
+      </div>
+    </li>
+    <li>
+      <div class="actions">
+        <%= form.submit %>
+      </div>
+    </li>
+  </ul>
 <% end %>

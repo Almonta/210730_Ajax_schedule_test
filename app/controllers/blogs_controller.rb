@@ -8,7 +8,7 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1 or /blogs/1.json
   def show
-    @schedules = @blog.schedules
+    @schedules = @blog.schedules.order(created_at: :desc)
     @schedule = @blog.schedules.build
   end
 

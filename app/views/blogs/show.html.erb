@@ -10,13 +10,13 @@
   <%= @blog.content %>
 </p>
 
+  <!-- コメント入力欄をブログの詳細ページに表示するためのrender -->
+  <%= render partial: 'schedules/form', locals: { schedule: @schedule, blog: @blog } %>
 
   <div id="schedules_area">
     <!-- 投稿されたコメント一覧をブログの詳細ページに表示するためのrender -->
     <%= render partial: 'schedules/index', locals: { schedules: @schedules, blog: @blog } %>
   </div>
-  <!-- コメント入力欄をブログの詳細ページに表示するためのrender -->
-  <%= render partial: 'schedules/form', locals: { schedule: @schedule, blog: @blog } %>
 
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
